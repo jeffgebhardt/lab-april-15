@@ -21,3 +21,13 @@ function sumAndMultiply(numOne, numTwo, numThree){
   console.log('\"' + numOne + ' and ' + numTwo + ' and ' + numThree + ' sum to ' + answer[0] + '\"');
   console.log('\"The  numbers ' + numOne + ' and ' + numTwo + ' and ' + numThree + ' have a product of ' + answer[1] + '\"');
 }
+
+function sumArray(array){
+  var arrayLength = array.length;
+  var total = 0;
+
+  for(i = 0; i < arrayLength; i++){
+    total += array[i];
+  }
+  return total;
+}
