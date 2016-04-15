@@ -11,10 +11,10 @@ function multiply(numOne, numTwo){
   multiplyOutput.textContent = '\"The product of ' + numOne + ' and ' + numTwo + ' is ' + answer + '\"';
   return answer;
 };
-
+//Good function name -- very descriptive
 function sumAndMultiply(numOne, numTwo, numThree){
   var answer = [];
-
+//Interesting to see the extra step you put in here, makes more sense to me than my own code!
   var x = sum(numOne, numTwo);
   answer.push(sum(x, numThree));
   var y = multiply(numOne, numTwo);
@@ -42,7 +42,7 @@ function sumArray(array){
   sumArrayOutput.textContent = '\"' + array + ' was passed in as an array of numbers, and ' + total + ' is their sum.\"';
 }
 
-function multipyArray(array){
+function multiplyArray(array){
   var total = 1;
 
   for(i = 0; i < array.length; i++){
