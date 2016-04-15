@@ -23,11 +23,21 @@ function sumAndMultiply(numOne, numTwo, numThree){
 }
 
 function sumArray(array){
-  var arrayLength = array.length;
   var total = 0;
 
-  for(i = 0; i < arrayLength; i++){
+  for(i = 0; i < array.length; i++){
     total += array[i];
   }
-  return total;
+  console.table(array);
+  console.log('\"' + array + ' was passed in as an array of numbers, and ' + total + ' is their sum.\"' );
+}
+
+function multipyArray(array){
+  var total = 1;
+
+  for(i = 0; i < array.length; i++){
+    total *= array[i];
+  }
+  console.table(array);
+  console.log('The numbers ' + array + ' have a product of ' + total + '.\"');
 }
